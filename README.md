@@ -16,9 +16,9 @@
 ## 1. Introduction
 Our mini-compiler is built for a subset of the PhP language (i.e. only while and if-else statements). We have used tools such as yacc, lex and Python scripts to build the complete compiler. An example of what our compiler produces -
 ### Sample Input
-![Sample Input](.\images\sample-input.jpg)
+![Sample Input](./images/sample-input.jpg)
 ### Sample Output
-![Sample Output](.\images\sample-output.jpg)
+![Sample Output](./images/sample-output.jpg)
 
 ## 2. Architecture of Language
 Our compiler supports the following language features -
@@ -31,7 +31,7 @@ Our compiler supports the following language features -
 * [Lex Documentation](http://dinosaur.compilertools.net/lex/index.html)
 
 ## 4. Context Free Grammar
-![Context Free Grammar](.\images\grammar.jpg)
+![Context Free Grammar](./images/grammar.jpg)
 
 ## 5. Design Strategy
 ### Symbol Table Creation
@@ -98,23 +98,23 @@ Our compiler supports the following language features -
 
 ## 9. Snapshots
 ### Sample input
-![Sample input with comments](.\images\sample-input-with-comments.jpg)
+![Sample input with comments](./images/sample-input-with-comments.jpg)
 ### Code after stripping out comments
-![Code after stripping out comments](.\images\code-after-stripping-out-comments.png)
+![Code after stripping out comments](./images/code-after-stripping-out-comments.png)
 ### Symbol and keyword table
-![Symbol and keyword table](.\images\symbol-keyword-table.png)
+![Symbol and keyword table](./images/symbol-keyword-table.png)
 ### Abstract syntax tree
-![Tree 0](.\images\graph-0.png)
-![Tree 1](.\images\graph-1.png)
-![Tree 2](.\images\graph-2.png)
-![Tree 3](.\images\graph-3.png)
+![Tree 0](./images/graph-0.png)
+![Tree 1](./images/graph-1.png)
+![Tree 2](./images/graph-2.png)
+![Tree 3](./images/graph-3.png)
 ### Intermediate code
-![Intermediate code](.\images\intermediate-code.png)
+![Intermediate code](./images/intermediate-code.png)
 ### Optimized intermediate code
-![Optimized intermediate code 1](.\images\optimized-intermediate-code-1.png)
-![Optimized intermediate code 2](.\images\optimized-intermediate-code-2.png)
+![Optimized intermediate code 1](./images/optimized-intermediate-code-1.png)
+![Optimized intermediate code 2](./images/optimized-intermediate-code-2.png)
 ### Assembly code
-![Assembly code](.\images\assembly-code.png)
+![Assembly code](./images/assembly-code.png)
 
 ## 10. Conclusions
 * It’s very easy to type a command to compile a program, but writing and understanding all phases of a compiler is challenging.
