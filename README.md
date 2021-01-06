@@ -1,7 +1,7 @@
 # TABLE OF CONTENTS
 |Chapter No.|Title|
 |-----------|-----|
-|1.|INTRODUCTION|
+|1.|[INTRODUCTION](#1.-Introduction)|
 |2.|ARCHITECTURE OF LANGUAGE|
 |3.|LITERATURE SURVEY|
 |4.|CONTEXT FREE GRAMMAR|
