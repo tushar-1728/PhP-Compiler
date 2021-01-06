@@ -51,7 +51,7 @@ identifier sym_table[100];          /*symbol table*/
 %%
 
 program:
-        START function END               { ; }
+        START function END                  { ; }
         ;
 
 function:
