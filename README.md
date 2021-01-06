@@ -1,7 +1,7 @@
 # TABLE OF CONTENTS
 |Chapter No.|Title|
 |-----------|-----|
-|1.|[INTRODUCTION](https://github.com/tushar-1728/PhP-Compiler#1-introduction)|
+|1.|[INTRODUCTION](#1-introduction)|
 |2.|ARCHITECTURE OF LANGUAGE|
 |3.|LITERATURE SURVEY|
 |4.|CONTEXT FREE GRAMMAR|
