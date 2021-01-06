@@ -2,16 +2,17 @@
 |Chapter No.|Title|
 |-----------|-----|
 |1.|[INTRODUCTION](#1-introduction)|
-|2.|ARCHITECTURE OF LANGUAGE|
-|3.|LITERATURE SURVEY|
-|4.|CONTEXT FREE GRAMMAR|
-|5.|DESIGN STRATEGY|
-|6.|IMPLEMENTATION DETAILS|
-|7.|INSTRUCTIONS FOR USING THE COMPILER|
-|8.|RESULTS AND SHORTCOMINGS|
-|9.|SNAPSHOTS|
-|10.|CONCLUSION|
-|11.|FURTHER ENHANCEMENTS|
+|2.|[ARCHITECTURE OF LANGUAGE](#2-architecture-of-language)|
+|3.|[LITERATURE SURVEY](#3-literature-survey)|
+|4.|[CONTEXT FREE GRAMMAR](#4-context-free-grammar)|
+|5.|[DESIGN STRATEGY](#5-design-strategy)|
+|6.|[IMPLEMENTATION DETAILS](#6-implementation-details)|
+|7.|[INSTRUCTIONS FOR USING THE COMPILER](#7-instructions-for-using-the-compiler)|
+|8.|[RESULTS AND SHORTCOMINGS](#8-results-and-shortcomings)|
+|9.|[SNAPSHOTS](#9-snapshots)|
+|10.|[CONCLUSION](#10-conclusions)|
+|11.|[FURTHER ENHANCEMENTS](#11-further-enhancements)|
+|12.|[REFERENCES/BIBLIOGRAPHY](#12-referencesbibliography)|
 
 ## 1. Introduction
 Our mini-compiler is built for a subset of the PhP language (i.e. only while and if-else statements). We have used tools such as yacc, lex and Python scripts to build the complete compiler. An example of what our compiler produces -
@@ -51,7 +52,7 @@ Our compiler supports the following language features -
 * We have performed reduction in number of live registers and constant folding optimization.
 * We have performed the optimization using C and Python.
 * We analyze the program line by line and use string manipulation and stack to perform these optimizations.
-### Error Handling - strategies and solutions used in our Mini-Compiler implementation (in its scanner, parser, semantic analyzer, and code generator)
+### Error Handling
 * The scanner doesn’t crash when it comes across unknown symbols.
 * The parser doesn’t stop parsing on encountering error and prints a syntax error at the corresponding line number.
 * Semantic analyzer produces an error on uninitialized variables, undeclared variables and re-declaration of variables.
@@ -60,14 +61,14 @@ Our compiler supports the following language features -
 * Target code is generated using a simple load-use-store mechanism.
 * This is done by looking at quadruple address code line by line.
 
-## 6. Implementation Details (Tools and Data Structures Used in order to implement the following)
+## 6. Implementation Details
 ### Symbol Table Creation
 * We use lex, yacc and custom code to generate the symbol table.
 * We hold the type, value and name of variables in an array of structures.
 * These array of structures are different for different scopes.
 * The symbol table therefore has an array of scopes which store an array of variables.
 * We also use a stack to maintain the current scope.
-### Abstract Syntax Tree (internal representation)
+### Abstract Syntax Tree
 * The abstract syntax tree basically consists of only three types of nodes that we have defined -
 ![Types of node used for creating AST](./images/types-of-node.jpg)
 * These nodes are built bottom up using yacc.
@@ -87,6 +88,12 @@ Our compiler supports the following language features -
 * In the parser, we use yacc’s built-in error handling mechanism.
 * In the semantic analyzer we use the symbol table to catch any errors.
 ## 7. Instructions for using the compiler
+### Installing dependencies
+```bash
+sudo apt update
+sudo apt install flex
+sudo apt install bison
+```
 * Change your directory to PhP-Compiler.
 * Write your code in sample.php file.
 * Then run  `bash compiler.sh` in the terminal of your linux machine.
@@ -127,7 +134,7 @@ Our compiler supports the following language features -
 * Function calls and argument parsing.
 * More efficient assembly code generator.
 
-## References/Bibliography
+## 12. References/Bibliography
 * Intermediate Code Generation -
  https://www.cse.iitm.ac.in/~rupesh/teaching/compiler/aug15/schedule/5-ir.pdf
 * Lex and Yacc: A Brisk Tutorial - https://www2.cs.arizona.edu/classes/cs453/fall14/DOCS/tutorial-large.pdf
